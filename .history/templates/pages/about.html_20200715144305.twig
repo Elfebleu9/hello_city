@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+ {% block title 'About Us | '~ parent() %}
+ {% block body %}
+    <div class="flex flex-row justify-between items-center m-20">
+      <img src="{{asset('/Img/drap_paris.png')}}" alt="drapeau" width="150" height="100" class="m-4 rounded">
+      <img src="{{asset('/Img/drap_idf.png')}}" alt="drapeau" width="150" height="100" class="m-4 rounded ">
+   </div>
+    <h1 class=" flex justify-center">Fait avec <span class="text-red-500">&hearts;</span> par Elfebleu9 et TDN. </h1>
+   
+    <p class=" flex justify-center">     
+        &middot; <a href="{{path('app_home')}}">Retour à la page d'accueil</a>
+    </p>
+    
+    
+ {% endblock %}

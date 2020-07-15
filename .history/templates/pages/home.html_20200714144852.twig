@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+ {% block title 'Hello Paris ! ' %}
+ {% block body %}
+    <h1>Hello from Paris</h1>
+    {# {{ 'now' | localizeddate('full', 'none') }} #}
+
+    <p>Nous sommes le {{'now'|date('l d F Y')}}.</p>
+    <p> Il est actuellement {{ 'now'|date('H:i')}}.</p>
+ {% endblock %}

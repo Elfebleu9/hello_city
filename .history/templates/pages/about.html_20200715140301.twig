@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+ {% block title 'About Us | '~ parent() %}
+ {% block body %}
+    <div class="flex">
+        <img src="{{asset('/Img/drap_paris.png')}}" alt="drapeau" width="150" height="100">
+        <img src="{{asset('/Img/drap_idf.png')}}" alt="drapeau" width="150" height="100">
+    </div>
+    <h1>Fait avec <span class="text-red-500">&hearts;</span> par Elfebleu9 et TDN. </h1>
+   
+    <p>     
+        &middot; <a href="{{path('app_home')}}">Retour à la page d'accueil</a>
+    </p>
+    
+    
+ {% endblock %}

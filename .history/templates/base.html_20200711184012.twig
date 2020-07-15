@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>{% block title %}Hello Paris{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <main role="main">
+            {% block body %}{% endblock %}
+        </main>
+
+        <footer>
+            <p>
+                &copy; Copyright {{'now'|date('Y')}}
+                &middot; <a href="{{path('app_about')}}">About Us</a>
+            </p>
+        </footer>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
